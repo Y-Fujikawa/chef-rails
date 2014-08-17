@@ -1,0 +1,20 @@
+# Created by http://www.gitignore.io
+
+### Vagrant ###
+.vagrant/
+
+
+### ChefCookbook ###
+.vagrant
+/cookbooks
+
+# Bundler
+bin/*
+.bundle/*
+
+.kitchen/
+.kitchen.local.yml
+
+### Key ###
+id_rsa
+authorized_keys

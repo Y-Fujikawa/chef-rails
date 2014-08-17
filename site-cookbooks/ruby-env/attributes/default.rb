@@ -1,0 +1,5 @@
+default['ruby-env']['user'] = "ops"
+default['ruby-env']['group'] = "ops"
+default['ruby-env']['version'] = "2.1.2"
+default['ruby-env']['rbenv_url'] = "https://github.com/sstephenson/rbenv"
+default['ruby-env']['ruby-build_url'] = "https://github.com/sstephenson/ruby-build"
