@@ -3,14 +3,30 @@ DEPENDENCIES
     path: site-cookbooks/add_user
   nginx
     path: site-cookbooks/nginx
+  nodejs
   ruby-env
     path: site-cookbooks/ruby-env
   yum-epel
 
 GRAPH
+  7-zip (1.0.2)
+    windows (>= 1.2.2)
   add_user (0.1.0)
+  apt (2.5.2)
+  ark (0.9.0)
+    7-zip (>= 0.0.0)
+    windows (>= 0.0.0)
+  build-essential (2.0.6)
+  chef_handler (1.1.6)
   nginx (0.1.0)
+  nodejs (2.0.0)
+    apt (>= 0.0.0)
+    ark (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
   ruby-env (0.1.0)
+  windows (1.34.2)
+    chef_handler (>= 0.0.0)
   yum (3.2.2)
   yum-epel (0.4.0)
     yum (~> 3.0)
