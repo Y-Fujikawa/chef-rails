@@ -17,6 +17,12 @@ service "nginx" do
   supports :status => true, :restart => true, :reload => true
 end
 
+directory '/var/www/guestbook-sample' do
+  owner 'ops'
+  action :create
+  recursive true
+end
+
 template "nginx.conf" do
   path '/etc/nginx/nginx.conf'
   source 'nginx.conf.erb'
